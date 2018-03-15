@@ -52,6 +52,20 @@ footer h2 {
   margin:auto;
 }
 
+.tablet {
+  display:none;
+}
+
+@media only screen and (max-width:1024px) {
+  .sitecontent {width:100%;}
+  nav a {display:none;}
+  .tablet {display:inline-block;}
+  nav div {justify-content:center;}
+  #glasses, #glasses div, #glasses img, #glasses h2 {display:none;}
+  #products div {width:47%;}
+  #generalinfo div {width:10%;}
+}
+
 .blackcontainer {
   background-color: black;
   width:25rem;
