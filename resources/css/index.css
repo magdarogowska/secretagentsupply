@@ -84,7 +84,7 @@ footer h2 {
   display:block;
 }
 
-#motopicture h1 {
+.bike {
   font-weight:bold;
   font-size:2rem;
   padding:0 0 2rem 3rem;
@@ -145,7 +145,7 @@ footer h2 {
   margin-bottom:4rem;
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1024px)and (min-width:470px) {
   .sitecontent {width:100%;}
   nav a {display:none;}
   .tablet {display:inline-block;}
@@ -153,4 +153,20 @@ footer h2 {
   #glasses, #glasses div, #glasses img, #glasses h2 {display:none;}
   #products > div {width:47%;}
   #generalinfo  div {width:35%;}
+}
+
+@media only screen and (max-width:470px) {
+  nav a {display:none;}
+  nav div {justify-content:center;}
+  footer {text-align: center;}
+  .sitecontent {width:100%;}
+  .blackcontainer { width:100%;}
+  .tablet {display:inline-block;}
+  .location span {padding-bottom: 5rem;}
+  #generalinfo div {margin-bottom: 0.5rem; width:90%;}
+  #motopicture {height:15rem;}
+  #watch, #glasses { display:none;}
+  #pen { width:90%; margin:auto;}
+  #generalinfo {flex-direction:column; align-items: center;}
+  .bike { font-size:1rem;}
 }
